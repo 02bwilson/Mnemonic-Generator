@@ -35,13 +35,11 @@ def getWordIndex(allow_repeating_ind, word_list_ind, return_mnemonic_ind, min_le
     index = random.randrange(0, len(word_list_ind))
     # Checks if word is long enough
     if len(word_list_ind[index]) >= min_length_ind:
-        print(len(word_list_ind[index]))
         # If word repeats and repeats not allowed, recurse
         if allow_repeating_ind == False and word_list_ind[index] in return_mnemonic_ind:
                 getWordIndex(allow_repeating_ind, word_list_ind, return_mnemonic_ind, min_length_ind)
         # If all confitions met, return
         else:
-            print("Index: {}".format(index))
             return index
     # If not long enough, recurse
     else:
@@ -49,5 +47,5 @@ def getWordIndex(allow_repeating_ind, word_list_ind, return_mnemonic_ind, min_le
     
 
 if __name__ == "__main__":
-    generateMnemonic()
+    print(generateMnemonic(min_length=13))
     
