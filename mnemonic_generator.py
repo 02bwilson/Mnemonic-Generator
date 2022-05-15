@@ -43,7 +43,7 @@ def generateMnemonic(word_count=12, allow_repeating=False, wordlist=None, min_le
 
 def getWordIndex(allow_repeating_ind, word_list_ind, return_mnemonic_ind, min_length_ind):
     # Picks random word
-    index = random.randrange(0, len(word_list_ind))
+    index = random.randrange(0, len(word_list_ind) - 1)
     # Checks if word is long enough
     if len(word_list_ind[index]) >= min_length_ind:
         # If word repeats and repeats not allowed, recurse
