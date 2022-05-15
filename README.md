@@ -9,7 +9,7 @@ Clone the repository, and copy the needed files to your project. All that is nee
 ## Usage
 
 ```python
-from generator import generateMnemonic
+from mnemonic_generator import generateMnemonic
 
 # returns your mnemonic
 generateMnemonic(word_count, allow_repeating, wordlist, min_length)
