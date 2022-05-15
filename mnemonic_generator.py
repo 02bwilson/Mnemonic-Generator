@@ -47,5 +47,5 @@ def getWordIndex(allow_repeating_ind, word_list_ind, return_mnemonic_ind, min_le
     
 
 if __name__ == "__main__":
-    print(generateMnemonic(min_length=13))
+    print(generateMnemonic(min_length=5))
     
