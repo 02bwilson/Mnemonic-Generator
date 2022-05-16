@@ -4,7 +4,7 @@ Mnemonic Key Generator is a Python library for generating mnemonic phrases. It a
 
 ## Installation
 
-Clone the repository, and copy the needed files to your project. All that is needed is generator.py and wordlist.json
+Clone the repository, and copy the needed files to your project. All that is needed is mnemonic_generator.py and wordlist.json
 
 ## Usage
 
