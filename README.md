@@ -1,6 +1,6 @@
-# Mnemonic Generator [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20mnemonic%20generator!%20&url=https://github.com/02bwilson/Mnemonic-Generator&via=github&hashtags=programming)
+# Mnemonic Key Generator [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20mnemonic%20generator!%20&url=https://github.com/02bwilson/Mnemonic-Generator&via=github&hashtags=programming)
 
-Mnemonic Generator is a Python library for generating mnemonic phrases. It allows for the ability to specify the word count, min word length, repeatability, and a custom word-list (JSON formatted).
+Mnemonic Key Generator is a Python library for generating mnemonic phrases. It allows for the ability to specify the word count, min word length, repeatability, and a custom word-list (JSON formatted).
 
 ## Installation
 
