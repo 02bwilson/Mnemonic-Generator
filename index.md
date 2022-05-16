@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# Mnemonic Generator [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20mnemonic%20generator!%20&url=https://github.com/02bwilson/Mnemonic-Generator&via=github&hashtags=programming)
 
-You can use the [editor on GitHub](https://github.com/02bwilson/Mnemonic-Generator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Mnemonic Generator is a Python library for generating mnemonic phrases. It allows for the ability to specify the word count, min word length, repeatability, and a custom word-list (JSON formatted).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
+Clone the repository, and copy the needed files to your project. All that is needed is generator.py and wordlist.json
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Usage
 
-```markdown
-Syntax highlighted code block
+```python
+from mnemonic_generator import generateMnemonic
 
-# Header 1
-## Header 2
-### Header 3
+# returns your mnemonic
+generateMnemonic(word_count, allow_repeating, wordlist, min_length)
+    '''
+    Parameters:
+        word_count: The number of words for the mnemoinic. DEFAULT = 12
+        allow_repeating: Allow words to repeat.  DEFAULT = FALSE
+        wordlist: Specify file to use custom wordlist. Note - You can also just add to the given wordlist. DEFAULT = None
+        min_length: The minimum length of the words in the mnemoinic. DEFAULT = 3
+    Returns:
+        str[]: List of the mnemoinic's composition.
+    '''
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Jekyll Themes
+Please make sure to update tests as appropriate.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/02bwilson/Mnemonic-Generator/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## License
+[cc4.0](https://creativecommons.org/licenses/by/4.0/)
